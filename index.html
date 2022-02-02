@@ -7,8 +7,76 @@
     <title>Conversor de Texto JS</title>
     <link rel="stylesheet" type="text/css" src="">
 </head>
-<body>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    h1{
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+    table, th, td {
+      border:1px solid black;
+      padding: 2px;
+    }
+    .cole{
+        text-align: center;
+        height: 30vh;
+    }
+    .resultado{
+        text-align: center;
+        height: 30vh;
+    }
+    textarea{
+        width: 99%; 
+        height: 97%;
+        resize: none;
+        margin-top: 2px;
+    }
+    .selecione {
+        width: 100%; 
+        margin: auto;
+    }
 
+</style>
+<body>
+    <h1>Conversor de texto - JS</h1>
+    <table>
+        <tr>
+          <th>Selecione o método:</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="selecione">
+            <input type="radio" id="M" name="radAnswer">
+            <label>Todas maiúsculas</label>
+            <input type="radio" id="m" name="radAnswer">
+            <label>Todas minúsculas</label>
+            <input type="radio" id="p" name="radAnswer">
+            <label>Primeira letra do parágrafo (Maiúsculo)</label>
+            <input type="radio" id="pp" name="radAnswer">
+            <label>Primeira letra da palavra (Maiúsculo)</label>
+            </div> 
+          </td>
+        </tr>
+        <tr>
+          <th>Cole seu texto:</th>
+        </tr>
+        <tr>
+          <td><textarea class="cole"></textarea></td>
+        </tr>
+        <tr>
+            <th>Resultado:</th>
+          </tr>
+          <tr>
+            <td><textarea readonly class="resultado"></textarea></td>
+          </tr>
+      </table>
 <script src="script.js"></script>
 </body>
 </html>
